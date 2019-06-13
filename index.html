@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="src/main.css">
+  <title>Zhonyas</title>
+  <script src="https://kit.fontawesome.com/e6f3941c32.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <button id="cadastro-login">
+        Cadastre-se / Login
+      </button>
+        <a href="index.html"><img src="src/logo.png" alt="Logo" class="logo-img"></a>
+    </div>
+    <div class="content flex">
+      <p style="font-size: 30px !important">Encontre a sua viagem com os melhores preços</p>
+      <div class="pesquisa">
+        <i class="fas fa-search"></i>
+        <input type="text" id="destino" placeholder="Ex: Paris" class="texto-inline">
+        <i class="fas fa-calendar-times"></i>
+        <p class="texto-inline">Entrada</p> 
+        <select id="dia-ida" name="data" class="style-select">
+          <option value="">--</option>
+        </select>
+        /
+        <select id="mes-ida" name="data" class="style-select">
+          <option value="">--</option>
+        </select>
+        /
+        <select id="ano-ida" name="data" class="style-select">
+          <option value="">--</option>
+        </select>
+        <i class="fas fa-calendar-times"></i>
+        <p class="texto-inline">Saída</p> 
+        <select id="dia-volta" name="data" class="style-select">
+          <option value="">--</option>
+        </select>
+        /
+        <select id="mes-volta" name="data" class="style-select">
+          <option value="">--</option>
+        </select>
+        /
+        <select id="ano-volta" name="data" class="style-select">
+          <option value="">--</option>
+        </select>
+      </div>
+      <button id="botao-pesquisa" class="style-botao">Pesquisar</button>
+      <p id="erro-preencher-campos" class="erro">
+        Preencha todos os campos
+      </p>
+      <div id="resultados-busca">
+          <div class="grid-ida">
+            <div class="secao" style="text-align: left">
+              <p>
+                <p class="texto-inline"><b>Ida</b></p>
+                <p class="texto-inline">
+                  <span id="dia-ida-final"></span>/
+                  <span id="mes-ida-final"></span>/
+                  <span id="ano-ida-final"></span></span>
+                </p>
+              <p>
+                <p class="texto-inline">14:50 <i class="fas fa-play"></i> 07:40</p>
+              </p>
+            </div>
+            <div class="secao" style="text-align: left">
+              <p>
+                <p class="texto-inline">VIX ---- CDG</p>
+              </p>
+              <p>
+                <p class="texto-inline">Duração do vôo: 35h 50min</p>
+              </p>
+            </div>
+          </div>
+          <div class="grid-volta">
+            <div class="secao" style="text-align: left">
+              <p>
+                <p class="texto-inline"><b>Volta</b></p>
+                <p class="texto-inline">
+                  <span id="dia-volta-final"></span>/
+                  <span id="mes-volta-final"></span>/
+                  <span id="ano-volta-final"></span></span>
+                </p>
+              </p>
+              <p>
+                <p class="texto-inline">08:40 <i class="fas fa-play"></i> 22:35</p>
+              </p>
+            </div>
+            <div class="secao" style="text-align: left">
+              <p>
+                <p class="texto-inline">CDG ---- VIX</p>
+              </p>
+              <p>
+                <p class="texto-inline">Duração do vôo: 18h 55min</p>
+              </p>
+            </div>
+          </div>
+          <div class="grid-preco flex">
+            <p><b>R$5819</b></p>
+            <p>
+              <p class="texto-inline">Preço Total</p>
+            </p>
+            <p>
+              <p class="texto-inline">Ida e volta</p>
+            </p>
+            <button id="botao-continuar" class="style-botao">Continuar</button>
+          </div>
+        </div>
+    </div>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="src/main.css">
+  <title>Trivago 2.0</title>
+  <script src="https://kit.fontawesome.com/e6f3941c32.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <button id="cadastro-login">
+        Cadastre-se / Login
+      </button>
+      <a href="index.html"><img src="src/logo.png" alt="Logo" class="logo-img"></a>
+    </div>
+    <div class="content flex secao-esq">
+      <h1 style="margin-bottom: 50px">Informe os dados do cartão</h1>
+      <div class="secao-input">
+        <div class="input-esq">
+          <i class="fas fa-credit-card"></i>
+          Número do cartão: 
+        </div>
+        <div class="input-dir">
+          <input type="text" class="style-input" id="num-cad" placeholder="0000-0000-0000-0000" style="width: 180px">
+        </div>
+      </div>
+      <div class="secao-input">
+        <div class="input-esq">
+          <i class="fas fa-calendar-times"></i>
+          Data de validade: 
+        </div>
+        <div class="input-dir">
+          <input type="text" class="style-input" id="data-val" placeholder="--/--/--" style="width: 75px">
+        </div>
+      </div>
+      <div class="secao-input">
+        <div class="input-esq">
+          <i class="fas fa-ellipsis-h"></i>
+          Código de segurança: 
+        </div>
+        <div class="input-dir">
+          <input type="text" class="style-input" id="cod-seg" placeholder="123" style="width: 50px">
+        </div>
+      </div>
+      <div class="secao-input">
+        <div class="input-esq">
+            <i class="far fa-money-bill-alt"></i>
+          Pagador: 
+        </div>
+        <div class="input-dir">
+          <input type="text" class="style-input" id="pag" placeholder="João da Silva" style="width: 200px">
+        </div>
+      </div>
+      <div class="secao-input">
+        <div class="input-esq">
+          <i class="far fa-id-card"></i>
+          CPF do pagador: 
+        </div>
+        <div class="input-dir">
+          <input type="text"class="style-input" id="cpf-pag" placeholder="123.456.789-00" style="width: 135px">
+        </div>
+      </div>
+      <p id="erro-compra" class="erro">
+        Preencha todos os campos
+      </p>
+      <button class="style-botao" id="botao-comprar">Comprar</button>
+    </div>
+  </div>
+  <script src="src/comprar.js"></script>
+</body>
+</html>

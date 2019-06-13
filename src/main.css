@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Verdana"
+}
+
+.texto-inline {
+  font-size: 20px;
+  display: inline;
+}
+
+.container {
+  max-height: 100vh;
+}
+
+.navbar {
+  height: 10vh;
+  background-color: #7b9ffa;
+  width: 100%;
+  position: relative;
+}
+
+.content {
+  margin: 0 auto;
+  min-height: 90vh;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#cadastro-login {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  margin: 0;
+  background-color: #4b7dfc;
+  border: none;
+  padding: 0 20px 0 20px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.logo-img {
+  position: absolute;
+  top: 2.5vh;
+  left: 15px;;
+  max-height: 50%;
+}
+
+.pesquisa {
+  display: inline-block;
+  margin: 30px;
+}
+
+.style-botao {
+  margin: 0 auto;
+  border: none;
+  padding: 10px 17px 10px 17px;
+  background-color: #4b7dfc;
+  color: #fff;
+  font-size: 25px;
+}
+
+#destino {
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.erro {
+  visibility: hidden;
+  color: #f00;
+  margin: 5px;
+}
+
+.secao {
+  margin: 0 auto;
+  width: 50%;
+  float: left;
+}
+
+div.secao-input {
+  margin: 5px 0 5px 0;
+}
+
+.style-input {
+  padding: 10px;
+  width: 250px;
+}
+
+.header {
+  margin-bottom: 30px;
+  color: #515151;
+}
+
+.style-select {
+  padding: 5px;
+  font-size: 15px;
+}
+
+.inputs {
+  text-align: right;
+  margin-right: 35%;
+}
+
+.grid-ida {
+  grid-area: ida;
+}
+
+.grid-volta {
+  grid-area: volta;
+}
+
+.grid-preco {
+  grid-area: preco;
+}
+
+#resultados-busca {
+  display: grid;
+  grid-template-areas:
+    'ida ida ida preco'
+    'volta volta volta preco';
+  grid-gap: 10px;
+  background-color: transparent;
+  padding: 10px;
+  margin: 15px;
+  visibility: hidden;
+}
+
+#resultados-busca > div {
+  padding: 20px 30px 20px 30px;
+  font-size: 30px;
+  background-color: #eee;
+  border: 1px solid black;
+}
+
+.secao-esq {
+  text-align: left;
+  margin-left: 10%;
+  width: 700px;
+}
+
+.input-esq {
+  width: 30%;
+  float: left;
+}
+
+.input-dir {
+  width: 70%;
+  float: left;
+}
+
+.finalizada {
+  background-color: #4b7dfc;
+  margin: 0 auto;
+  padding: 15px;
+  color: #fff;
+}
+
+.informacao {
+  margin: 15px 0 15px 0;
+  font-size: 30px;
+}
+
+.informacao > input {
+  padding: 15px;
+  font-size: 25px;
+}
+
+.informacao > a {
+  color: #777;
+  text-decoration: none;
+}
